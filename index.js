@@ -11,14 +11,14 @@ const volumeEl = document.getElementById('volume-el')
 const massEl = document.getElementById('mass-el')
 
 
-function convert() {
+convertEl.addEventListener('click', function() {
     let value = document.getElementById('value-el').value
     
     lengthEl.textContent = convertLength(value)
     volumeEl.textContent = convertVolume(value)
     massEl.textContent = convertMass(value)
     document.getElementById('value-el').value = ''
-}
+})
 
 function convertLength(val) {
     return `${val} meter(s) = ${(val * 3.281).toFixed(3)} feet | ${val} feet = ${(val / 3.281).toFixed(3)} meter(s)`
