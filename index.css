@@ -6,10 +6,9 @@ html {
 
 #main {
     width: 575px;
-    margin: 0 auto;
+    margin: 30px auto;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
-    border: 1px solid #69306d;
 }
 
 .container {
